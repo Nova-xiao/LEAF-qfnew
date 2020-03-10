@@ -1,0 +1,61 @@
+2020-03-10 00:17:16,809 - FL-type - INFO - logger init finished ---- log file: reddit.cfg.log
+2020-03-10 00:17:19,152 - FL-type - WARNING - no user behavior trace was found, running in no-trace mode
+2020-03-10 00:17:19,157 - FL-type - INFO - read config from reddit.cfg
+2020-03-10 00:17:19,158 - FL-type - INFO - ================= Config =================
+2020-03-10 00:17:19,158 - FL-type - INFO - 	config_name = reddit.cfg
+2020-03-10 00:17:19,158 - FL-type - INFO - 	dataset = reddit
+2020-03-10 00:17:19,159 - FL-type - INFO - 	model = stacked_lstm
+2020-03-10 00:17:19,159 - FL-type - INFO - 	num_rounds = 10
+2020-03-10 00:17:19,159 - FL-type - INFO - 	lr = 0.5
+2020-03-10 00:17:19,159 - FL-type - INFO - 	eval_every = 1
+2020-03-10 00:17:19,159 - FL-type - INFO - 	clients_per_round = 50
+2020-03-10 00:17:19,159 - FL-type - INFO - 	min_selected = 10
+2020-03-10 00:17:19,159 - FL-type - INFO - 	max_sample = 100
+2020-03-10 00:17:19,159 - FL-type - INFO - 	batch_size = 10
+2020-03-10 00:17:19,160 - FL-type - INFO - 	seed = 0
+2020-03-10 00:17:19,160 - FL-type - INFO - 	metrics_file = metrics
+2020-03-10 00:17:19,160 - FL-type - INFO - 	num_epochs = 1
+2020-03-10 00:17:19,160 - FL-type - INFO - 	gpu_fraction = 0.2
+2020-03-10 00:17:19,160 - FL-type - INFO - 	minibatch = None
+2020-03-10 00:17:19,160 - FL-type - INFO - 	round_ddl = [30.0, 5.0]
+2020-03-10 00:17:19,160 - FL-type - INFO - 	update_frac = 0.8
+2020-03-10 00:17:19,160 - FL-type - INFO - 	max_client_num = 1000
+2020-03-10 00:17:19,160 - FL-type - INFO - 	upload_time = [10.0, 1.0]
+2020-03-10 00:17:19,160 - FL-type - INFO - 	aggregate_algorithm = qfFedAvg
+2020-03-10 00:17:19,160 - FL-type - INFO - 	time_window = [20.0, 0.0]
+2020-03-10 00:17:19,161 - FL-type - INFO - 	user_trace = True
+2020-03-10 00:17:19,161 - FL-type - INFO - 	no_training = False
+2020-03-10 00:17:19,161 - FL-type - INFO - 	q = 3
+2020-03-10 00:17:19,161 - FL-type - INFO - ================= ====== =================
+2020-03-10 00:17:19,171 - FL-type - INFO - ############################## reddit.stacked_lstm ##############################
+2020-03-10 00:17:20,642 - FL-type - INFO - ======================Setup Clients==========================
+2020-03-10 00:17:21,750 - FL-type - INFO - Clients in Total: 813
+2020-03-10 00:17:21,789 - FL-type - INFO - set up 500 clients
+2020-03-10 00:17:29,584 - FL-type - INFO - Timer cached in cached_timers.json
+2020-03-10 00:17:29,585 - FL-type - INFO - device setup result: defaultdict(<class 'int'>, {'Xiaomi Redmi Note 7 Pro': 363, 'Google Nexus S': 447, 'Google Pixel 4': 3})
+2020-03-10 00:17:29,605 - FL-type - INFO - ===================== Random Initialization =====================
+2020-03-10 00:17:29,605 - FL-type - INFO - ===================== Round 1 of 10 =====================
+2020-03-10 00:17:29,605 - FL-type - INFO - --------------------- selection stage ---------------------
+2020-03-10 00:17:29,605 - FL-type - INFO - current time: 0	time window: 20.0	
+2020-03-10 00:17:29,606 - FL-type - INFO - 813 of 813 clients online
+2020-03-10 00:17:29,607 - FL-type - INFO - selected num: 50
+2020-03-10 00:17:29,623 - FL-type - INFO - 813 clients will upload successfully at most
+2020-03-10 00:17:29,623 - FL-type - INFO - --------------------- configuration stage ---------------------
+2020-03-10 00:17:55,674 - FL-type - INFO - average acc: 0.011104124042572817, average loss: 8.921978615404328
+2020-03-10 00:17:55,674 - FL-type - INFO - configuration and update stage simulation time: 24
+2020-03-10 00:17:55,887 - FL-type - INFO - --------------------- report stage ---------------------
+2020-03-10 00:17:55,888 - FL-type - INFO - 50 of 50 clients upload successfully
+2020-03-10 00:17:55,888 - FL-type - INFO - round succeed, updating global model...
+2020-03-10 00:17:55,888 - FL-type - INFO - Aggragate with qfFedAvg
+2020-03-10 00:18:04,189 - FL-type - INFO - --------------------- test result ---------------------
+2020-03-10 00:18:04,209 - FL-type - INFO - attended_clients num: 50/813
+2020-03-10 00:18:04,291 - FL-type - INFO - number of clients for test: 813 of 813 
+2020-03-10 00:19:39,531 - FL-type - INFO - test_accuracy: 0.0, 10th percentile: 0.0, 50th percentile: 0.0, 90th percentile 0.0
+2020-03-10 00:19:39,532 - FL-type - INFO - test_loss: 9.133010437272759, 10th percentile: 8.740248136771353, 50th percentile: 9.181671619415283, 90th percentile 9.190891043345134
+2020-03-10 00:19:42,240 - FL-type - INFO - ===================== Round 2 of 10 =====================
+2020-03-10 00:19:42,241 - FL-type - INFO - --------------------- selection stage ---------------------
+2020-03-10 00:19:42,241 - FL-type - INFO - current time: 44.0	time window: 20.0	
+2020-03-10 00:19:42,241 - FL-type - INFO - 813 of 813 clients online
+2020-03-10 00:19:42,243 - FL-type - INFO - selected num: 50
+2020-03-10 00:19:42,260 - FL-type - INFO - 813 clients will upload successfully at most
+2020-03-10 00:19:42,260 - FL-type - INFO - --------------------- configuration stage ---------------------
